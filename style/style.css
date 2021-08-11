@@ -1,0 +1,281 @@
+/* css reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* css reset */
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: #e0e8ffff;
+}
+p {
+  font-size: 16px;
+}
+
+.container {
+  width: 450px;
+  margin: 15px auto;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px -14px rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+}
+.container img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+main h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 40px auto 8px;
+  color: #24305bff;
+}
+
+main p {
+  text-align: center;
+  padding: 10px 50px 15px;
+  color: #9ea0b3ff;
+  line-height: 25px;
+}
+.payment {
+  width: 80%;
+  margin: 0 auto 5px;
+}
+.payment .annual {
+  background-color: #f8f9feff;
+  padding: 13px;
+  border-radius: 10px;
+  position: relative;
+}
+.payment img {
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.annual .an {
+  color: #24305bff;
+  font-weight: 900;
+  font-size: 16px;
+  margin-top: 3px;
+  margin-bottom: 8px;
+}
+.annual .price {
+  color: #9ea0b3ff;
+}
+
+.annual a {
+  position: absolute;
+  right: 26px;
+  top: 26px;
+  display: inline-block;
+  font-size: 15px;
+  color: #4f44c6ff;
+  /* padding: 10px; */
+}
+
+.annual a:hover {
+  text-decoration: none;
+  color: #8c87ccff;
+  transition: 0.5s;
+}
+
+.annual a:active {
+  color: black;
+  top: 27px;
+  right: 25px;
+  transition: 0.5s;
+}
+.payment .btn {
+  display: block;
+  margin: auto;
+  padding: 16px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+}
+.payment .btn:hover {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.payment .btn-payment {
+  margin-top: 23px;
+  width: 100%;
+
+  background-color: #382ae1ff;
+  color: #f3f4feff;
+  box-shadow: 0px 15px 24px rgba(56, 42, 225, 0.2);
+}
+
+.payment .btn-payment:hover {
+  background-color: #766cf1ff;
+}
+
+.payment .btn-payment:active {
+  color: #1c2845ff;
+  position: relative;
+  top: 1px;
+  left: 1px;
+  transition: 0.5s;
+}
+
+.payment .btn-cancel {
+  margin-top: 14px;
+  background-color: transparent;
+  color: #7d8597ff;
+}
+
+.payment .btn-cancel:hover {
+  color: #1c2845ff;
+}
+.payment .btn-cancel:active {
+  color: white;
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+
+/* clear float */
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
