@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* css reset */
 html,
 body,
@@ -140,6 +147,7 @@ p {
   margin: 15px auto;
   background-color: white;
   border-radius: 20px;
+  -webkit-box-shadow: 0 10px 15px -14px rgba(0, 0, 0, 0.2);
   box-shadow: 0 10px 15px -14px rgba(0, 0, 0, 0.2);
   padding-bottom: 20px;
 }
@@ -201,6 +209,8 @@ main p {
 .annual a:hover {
   text-decoration: none;
   color: #8c87ccff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -208,6 +218,8 @@ main p {
   color: black;
   top: 27px;
   right: 25px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 .payment .btn {
@@ -220,6 +232,8 @@ main p {
 }
 .payment .btn:hover {
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -229,6 +243,7 @@ main p {
 
   background-color: #382ae1ff;
   color: #f3f4feff;
+  -webkit-box-shadow: 0px 15px 24px rgba(56, 42, 225, 0.2);
   box-shadow: 0px 15px 24px rgba(56, 42, 225, 0.2);
 }
 
@@ -241,6 +256,8 @@ main p {
   position: relative;
   top: 1px;
   left: 1px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
